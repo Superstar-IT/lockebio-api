@@ -8,7 +8,7 @@ import {
   ValidateNested,
 } from 'class-validator';
 
-import { getValidateOptions } from 'src/core/validators/validation';
+import { getValidateOptions } from '../../core/validators/validation';
 
 export class HealthMartCustomerInfo {
   @ApiProperty({ type: String, required: true })

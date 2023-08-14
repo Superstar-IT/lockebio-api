@@ -10,10 +10,10 @@ import {
 import { ApiNotFoundResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { isNotEmptyObject } from 'class-validator';
 
-import { getFromDto } from 'src/core/utils/repository.utils';
-import { generateRandomId } from 'src/core/utils/string.utils';
-import { PharmacyDto } from 'src/pharmacy/dto/pharmacy.dto';
-import { PharmacyService } from 'src/pharmacy/pharmacy.service';
+import { getFromDto } from '../core/utils/repository.utils';
+import { generateRandomId } from '../core/utils/string.utils';
+import { PharmacyDto } from '../pharmacy/dto/pharmacy.dto';
+import { PharmacyService } from '../pharmacy/pharmacy.service';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { Order } from './dto/order-response.dto';
 import { OrderEntity } from './entities/order.entity';
@@ -83,14 +83,14 @@ export class OrdersController {
       },
     };
 
-    return await this.ordersService.createOrder(newOrder).then(() => {
+    return await this.ordersService.createOrder(newOrder).then((res) => {
       const order = getFromDto<Order>(createOrderDto, new Order());
       if (integrationName === 'healthmart') {
-        order.healthMartId = newOrder.id;
+        order.healthMartId = res.id;
       } else if (integrationName === 'careplus') {
-        order.carePlusId = newOrder.id;
+        order.carePlusId = res.id;
       } else if (integrationName === 'quickcare') {
-        order.quickCareId = newOrder.id;
+        order.quickCareId = res.id;
       }
       return order;
     });
