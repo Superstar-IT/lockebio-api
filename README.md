@@ -23,18 +23,28 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+Task: Order Service with Pharmacy Integration
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Tech stacks
+- TypeScript
+- [Nest](https://github.com/nestjs/nest)
+- [Swagger](https://swagger.io/)
+- [Class-validator](https://github.com/typestack/class-validator)
+- [In-Memory-DB](https://github.com/nestjs-addons/in-memory-db)
 
-## Installation
-
+## Quick Run
+```bash
+$ git clone https://github.com/Superstar-IT/lockebio-api.git
+$ cd lockebio-api
+$ cp .env.example .env
+```
+Need to set the following env variables
+```bash
+$ PHARMACY_MOCK_API_SERVER=http://pharmacy-mock-service-env.eba-xzj3bbnm.us-east-1.elasticbeanstalk.com
+$ CACHE_TTL=60000
+```
 ```bash
 $ yarn install
-```
-
-## Running the app
-
-```bash
 # development
 $ yarn run start
 
@@ -42,6 +52,7 @@ $ yarn run start
 $ yarn run dev
 
 # production mode
+$ yarn build
 $ yarn run start:prod
 ```
 
