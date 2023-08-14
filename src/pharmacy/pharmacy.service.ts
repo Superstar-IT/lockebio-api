@@ -8,7 +8,7 @@ import { ConfigService } from '@nestjs/config';
 import { Cache } from 'cache-manager';
 import { isEmpty } from 'class-validator';
 
-import { PharmacyMockService } from 'src/core/lib/pharmacy-mock.service';
+import { PharmacyMockService } from '../core/lib/pharmacy-mock.service';
 import { PharmacyDto } from './dto/pharmacy.dto';
 
 @Injectable()
