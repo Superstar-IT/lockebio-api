@@ -682,10 +682,10 @@
   resolved "https://registry.yarnpkg.com/@lukeed/csprng/-/csprng-1.1.0.tgz#1e3e4bd05c1cc7a0b2ddbd8a03f39f6e4b5e6cfe"
   integrity sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==
 
-"@nestjs/axios@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/axios/-/axios-3.0.0.tgz#a2e70b118e3058f3d4b9c3deacd496ec4e3ee69e"
-  integrity sha512-ULdH03jDWkS5dy9X69XbUVbhC+0pVnrRcj7bIK/ytTZ76w7CgvTZDJqsIyisg3kNOiljRW/4NIjSf3j6YGvl+g==
+"@nestjs-addons/in-memory-db@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs-addons/in-memory-db/-/in-memory-db-3.0.3.tgz#789ab4f2a181bb49453b4587ddb4026620ab4f7f"
+  integrity sha512-E+/7ivsddNwXo+5c0CDBBlnDS7jhMlseOOOApkgxEB79siGeOEqvIIshlSCZF8gc27N4xSJ8WqpFhFZXVJB4Qw==
 
 "@nestjs/cache-manager@^2.1.0":
   version "2.1.0"
